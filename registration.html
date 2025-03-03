@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - X1 USA Series</title>
+    <style>
+        /* Fonte Global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header nav .logo {
+            display: flex;
+            align-items: center;
+            margin-left: -10px;
+        }
+
+        header nav .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        header nav ul li a.active {
+            font-weight: bold;
+        }
+
+        header nav ul li a.active::after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #CE1C1C;
+        }
+
+
+        .registration-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .registration-section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #002147;
+            margin-bottom: 20px;
+        }
+
+        .registration-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .registration-section a {
+            display: inline-block;
+            background-color: #002147;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo_X1.png" alt="X1 Logo">
+                <h1 style="font-weight: normal;">X1 USA Series</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html" class="active">Registration</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registration-section" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:/Users/Morch/OneDrive/Documents/Rafael/X1/Stadium.png') no-repeat center center; background-size: cover; padding: 120px 20px; text-align: center;">
+        <h2 style="font-family: 'Lato', sans-serif; font-size: 5rem; color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">REGISTRATION</h2>
+    </section>
+
+    <div style="height: 30px; background: linear-gradient(to right, #Ff0000, #002147); margin: 20px 0;"></div>
+
+    <section class="challenge-section" style="background-color: #f4f4f4; padding: 80px 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+        <!-- Texto Inspirador -->
+        <div style="flex: 1; margin-left: 20px;">
+            <h2 style="font-family: 'Lato', sans-serif; font-size: 2.8rem; font-weight: bold; color: #002147; margin-bottom: 30px;">X1 Florida Series 2025: The Ultimate 1v1 Challenge!</h2>
+            <p style="font-size: 1.3rem; line-height: 1.8; color: #333; margin-bottom: 40px;">
+                <strong>The X1 Florida Series 2025</strong> is the premier 1v1 tournament in the U.S., designed to help young players showcase their skills and compete in an intense and thrilling environment. With participants traveling from around the globe, the X1 Florida Series offers the perfect stage to test your abilities against top talent in a competitive atmosphere.<br><br>
+                <strong>Don’t miss out!</strong> Register now and secure your spot in this unparalleled experience of skill, competition, and passion.
+            </p>
+            <div style="margin-top: 20px;">
+                <a href="https://form.jotform.com/250294639803159" target="_blank" style="display: inline-block; background: linear-gradient(to right, #Ff0000, #051094); color: #fff; text-decoration: none; padding: 15px 40px; border-radius: 30px; font-size: 1.3rem; font-weight: bold; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">Register Now</a>
+            </div>
+        </div>
+        <!-- Imagem Destacada -->
+        <div style="flex: 1; text-align: center; position: relative;">
+            <img src="C:\Users\Morch\OneDrive\Documents\Rafael\X1\bolaquebrandovidro.png" alt="Player holding ball" style="max-width: 70%; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2025 X1 USA Series. All rights reserved.</p>
+    </footer>
+</body>
+</html>

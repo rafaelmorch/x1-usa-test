@@ -1,0 +1,28 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    overflow-x: hidden; /* Evita barras de rolagem laterais */
+}
+
+/* 🔹 Garante que a estrutura ocupe toda a tela */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 🔹 Hero Section - Agora cobre 100% da largura */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 100v
