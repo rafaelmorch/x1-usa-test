@@ -12,9 +12,9 @@ body, html {
     overflow-x: hidden;
 }
 
-/* 🔹 Cabeçalho */
+/* 🔹 Cabeçalho Responsivo */
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -87,7 +87,7 @@ header nav ul li a.active {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -196,8 +196,6 @@ footer {
 }
 
 /* 🔹 🔥 Responsividade 🔥 */
-
-/* Ajustes para tablets */
 @media (max-width: 1024px) {
     header nav {
         flex-direction: column;
@@ -216,7 +214,6 @@ footer {
     }
 }
 
-/* Ajustes para celulares */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -237,7 +234,6 @@ footer {
     }
 }
 
-/* Ajustes para telas menores que 480px */
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2rem;
