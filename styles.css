@@ -1,220 +1,88 @@
-/* 🔹 Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 🔹 Tipografia Responsiva */
+body, html {
+    font-size: 100%; /* Base font size */
 }
 
-body, html {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    text-align: center;
-    overflow-x: hidden;
+/* 🔹 Ajustes Responsivos Gerais */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* 🔹 Cabeçalho Responsivo */
-header {
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    padding: 15px 0;
-}
-
 header nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 
-header nav .logo {
-    display: flex;
-    align-items: center;
-}
-
 header nav .logo img {
-    height: 50px;
-    margin-right: 10px;
+    height: auto;
+    max-height: 50px;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-header nav ul li a.active {
-    font-weight: bold;
-}
-
-/* 🔹 Seção Hero com Vídeo */
+/* 🔹 Seção Hero Responsiva */
 .hero-section {
-    position: relative;
-    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.hero-section video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-content {
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    color: white;
-    text-shadow: 2px 2px 10px black;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+    font-size: 4vw;
 }
 
 .hero-content h2 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.5vw;
 }
 
-/* 🔹 Linha Divisória */
-.section-divider {
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(to right, #Ff0000, #002147);
-}
-
-/* 🔹 Seção de Experiência */
-.experience-section {
-    background: white;
-    padding: 60px 20px;
-    color: black;
-}
-
-.experience-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #002147;
-    margin-bottom: 30px;
-}
-
+/* 🔹 Seção de Experiência Responsiva */
 .experience-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.experience-text {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-.experience-image img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-/* 🔹 Botão de Registro */
+/* 🔹 Botão Responsivo */
 .register-btn {
-    display: inline-block;
-    background: linear-gradient(to right, #Ff0000, #051094);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.register-btn:hover {
-    transform: scale(1.05);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
 }
 
 /* 🔹 Seção Localização */
-.location-section {
-    background: #f4f4f4;
-    padding: 60px 20px;
-}
-
 .location-section h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #002147;
-}
-
-.map-container {
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
+    font-size: 2rem;
 }
 
 .map-container iframe {
     width: 100%;
-    height: 450px;
-    border: none;
+    height: 300px;
 }
 
-/* 🔹 Rodapé */
-footer {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
-
-/* 🔹 🔥 Responsividade 🔥 */
+/* 🔹 Responsividade Extra */
 @media (max-width: 1024px) {
-    header nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .hero-content h1 {
+        font-size: 3rem;
     }
 
-    .experience-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .experience-image img {
-        width: 90%;
-        max-width: 500px;
+    .hero-content h2 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
@@ -224,13 +92,8 @@ footer {
     }
 
     .register-btn {
-        padding: 12px 25px;
-        font-size: 1.2rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -248,7 +111,7 @@ footer {
     }
 
     .register-btn {
-        padding: 10px 20px;
-        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
